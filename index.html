@@ -44,10 +44,10 @@
             <div class="flex ">
              <div class="checked-number flex gap-2 bg-[#F4F7FF] rounded-full py-3 px-4 mr-9">
                 <img src="./assets/checkbox.png" alt="">
-                <h3 class="font-bold text-3xl">23</h3>
+                <h3 class="font-bold text-3xl" id="add-number">23</h3>
              </div>
              <div class="mr-6  bg-[#F4F7FF] flex items-center p-3 rounded-full">
-                <img src="./assets/theme-btn.png" alt="">
+               <button onclick="changeTheme()"><img src="./assets/theme-btn.png" alt="" ></button> 
              </div>
              
             </div>
@@ -65,7 +65,7 @@
                 </div>
                 <div>
                     <p class="font-medium text-base ">Task Assigned</p>
-                    <h3 class="text-4xl font-bold">06</h3>
+                    <h3 class="text-4xl font-bold" id="minus-number">06</h3>
                 </div>
             </div>
             <div class="head-card bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl py-6 pl-11 pr-20 w-auto h-32 flex gap-5 ">
@@ -86,27 +86,27 @@
         </div>
 
         <div class="px-6 py-8 grid grid-cols-3 gap-9">
-            <div class="head-card bg-[#F4F7FF] rounded-xl p-6 ">
+            <div class="head-card bg-[#F4F7FF] rounded-xl p-6 " >
                 <div class="flex flex-col gap-4">
                     <p class=" bg-white px-4 py-2 rounded-lg font-normal text-base w-28">ShopEase</p>
-                    <h3 class="text-2xl font-medium">Fix Mobile Button Issue </h3>
+                    <h3 class="text-2xl font-medium" id="fix-id">Fix Mobile Button Issue </h3>
                     <p class="bg-white p-4 rounded-lg font-normal text-base text-[#000000]/80 mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                 </div>
-                <div class="flex justify-between items-center border-t border-dashed border-[#3752FD]/20 pt-4">
+                <div id="parent" class="flex justify-between items-center border-t border-dashed border-[#3752FD]/20 pt-4">
                     <p class="font-medium text-base ">Deadline <br>21 March 2025</p>
-                    <button class="primary-btn">Completed</button>
+                    <button class="primary-btn " id="completed">Completed</button>
                 </div>
             </div>
 
             <div class="head-card bg-[#F4F7FF] rounded-xl p-6 ">
                 <div class="flex flex-col gap-4">
                     <p class=" bg-white px-4 py-2 rounded-lg font-normal text-base w-28">CloudSync</p>
-                    <h3 class="text-2xl font-medium">Add Dark Mode </h3>
+                    <h3 class="text-2xl font-medium" id="dark-id">Add Dark Mode </h3>
                     <p class="bg-white p-4 rounded-lg font-normal text-base text-[#000000]/80 mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                 </div>
                 <div class="flex justify-between items-center border-t border-dashed border-[#3752FD]/20 pt-4">
                     <p class="font-medium text-base ">Deadline <br>21 March 2025</p>
-                    <button class="primary-btn">Completed</button>
+                    <button class="primary-btn" id="completeDark">Completed</button>
                 </div>
             </div>
 
@@ -161,7 +161,7 @@
         </div>
     </div>
 
-    <div class=" bg-white rounded-2xl  h-screen ">
+    <div class=" bg-white rounded-2xl  h-full ">
         <div class="border-b border-dashed border-[#3752FD]/20" >
         <div class="flex gap-6 pt-6 items-center justify-center">
             <img src="./assets/activity.png" alt="">
@@ -171,11 +171,17 @@
             <button class="primary-btn">Clear History</button>
         </div>
     </div>
+    <div class="bg-[#F4F7FF] rounded-xl m-6 " id="history">
+        
+
+    </div>
     </div>
 
     </main>
-    <footer>
-
-    </footer>
+    
+    <script src="./complete.js"></script>
+    <script src="./addDark.js"></script>
+    <script src="./calculation.js"></script>
+    <script src="./theme.js"></script>
 </body>
 </html>
