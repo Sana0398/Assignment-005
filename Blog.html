@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        .poppins-font{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  .primary-btn{
+    background-color: #3752FD;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+    
+    </style>
+</head>
+<body class="bg-[#F4F7FF] bg-cover h-full poppins-font">
+    <header class="container mx-auto pt-6 ">
+        <div class="navbar bg-white shadow-sm rounded-2xl flex justify-between">
+            <div class="flex">
+                <div class="flex pt-6 ml-6 pb-4 gap-x-2  items-center">
+              <img src="./assets/logo.png" alt="">
+              <h3 class="text-4xl font-light text-[#00303C]">Dev<span class="font-bold">Board</span></h3>
+            </div>
+            </div>
+
+            <div>
+             
+             <button class="primary-btn mr-4" id="backToDesk">Back to Desk</button>
+             
+            </div>
+          </div>
+
+    </header>
+    <main>
+        <div>
+            <h3 class="text-4xl font-bold text-center my-12">Blogs</h3>
+        </div>
+        <div class="container mx-auto pt-6 ">
+            <div class="my-8">
+                <div class=" bg-white shadow-sm p-8  text-2xl font-bold border-b border-dashed border-[#3752FD]/20 ">
+                    <h3>Question-1: What are the different ways to select an element in the DOM?
+                    </h3>
+                </div>
+                <div class=" bg-white shadow-sm p-6  text-xl font-normal  ">
+                    <p>There are five ways to select element in the DOM. <br>
+                        These are getElementById, getElementsByClassName,getElementsByTagName,querySelector,querySelectorAll</p>
+                </div>
+            </div>
+            <div class="my-8">
+                <div class=" bg-white shadow-sm p-8  text-2xl font-bold border-b border-dashed border-[#3752FD]/20 ">
+                    <h3>Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                    </h3>
+                </div>
+                <div class=" bg-white shadow-sm p-6  text-xl font-normal  ">
+                    <h3 class="text-xl font-bold mb-1">innerHTML:</h3>
+                    <p>Returns the entire HTML structure of an element. </p>
+                    <h3 class="text-xl font-bold my-1">innerText:</h3>
+                    <p>Returns only the visible text content of an element, ignoring HTML tags and hidden elements. </p>
+                    <h3 class="text-xl font-bold my-1">textContent:</h3>
+                    <p>Returns all text content within an element, including hidden text, but without considering styling or HTML tags. </p>
+                </div>
+            </div>
+            <div class="my-8">
+                <div class=" bg-white shadow-sm p-8  text-2xl font-bold border-b border-dashed border-[#3752FD]/20 ">
+                    <h3>Question-3: What is event delegation in the DOM?</h3>
+                </div>
+                <div class=" bg-white shadow-sm p-6  text-xl font-normal  ">
+                    <p>When we had many child element, as multiple li element in ul and we need to use event listner for each list. <br>
+                    Then we add event listner in parent tag. This process is known as event delegation. </p>
+                </div>
+            </div>
+            <div class="my-8">
+                <div class=" bg-white shadow-sm p-8  text-2xl font-bold border-b border-dashed border-[#3752FD]/20 ">
+                    <h3>Question-4: What is event bubbling in the DOM?</h3>
+                </div>
+                <div class=" bg-white shadow-sm p-6  text-xl font-normal  ">
+                    <p>Event Bubbling is a method of event delegation.Its Trigger in the innermost elements</p>
+                </div>
+            </div>
+            <div class="my-8">
+                <div class=" bg-white shadow-sm p-8  text-2xl font-bold border-b border-dashed border-[#3752FD]/20 ">
+                    <h3>Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                </div>
+                <div class=" bg-white shadow-sm p-6  text-xl font-normal  ">
+                    <h3 class="text-xl font-bold mb-1">Creating an Element</h3>
+                    <p>To create an element, we use the document.createElement() method. </p>
+                    <h3 class="text-xl font-bold my-1">Adding an Element </h3>
+                    <p>To add an element, we can use multiple method. <br>
+                        i.appendChild() <br>
+                        ii.append() <br>
+                        iii.prepend() <br>
+                        iv.insertBefore()</p>
+                    <h3 class="text-xl font-bold my-1">Removing an Element</h3>
+                    <p>To remove an element, we can use these method. <br>
+                        i.removeChild() <br>
+                        ii.remove() <br></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="./back.js"></script>
+</body>
+</html>

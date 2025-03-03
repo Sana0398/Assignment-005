@@ -68,7 +68,7 @@
                     <h3 class="text-4xl font-bold" id="minus-number">06</h3>
                 </div>
             </div>
-            <div class="head-card bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl py-6 pl-11 pr-20 w-auto h-32 flex gap-5 ">
+            <div id="newPage" class="head-card bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl py-6 pl-11 pr-20 w-auto h-32 flex gap-5 ">
                 <div class=" flex justify-center items-center p-4 rounded-full">
                     <img src="./assets/board.png" alt="">
                     <h3 class="text-white font-medium text-2xl">Discover Something <br> New Today!</h3>
@@ -113,48 +113,48 @@
             <div class="head-card bg-[#F4F7FF] rounded-xl p-6 ">
                 <div class="flex flex-col gap-4">
                     <p class=" bg-white px-4 py-2 rounded-lg font-normal text-base w-28">SwiftPay</p>
-                    <h3 class="text-2xl font-medium">Optimize  Home page  </h3>
+                    <h3 class="text-2xl font-medium" id="home-id">Optimize  Home page  </h3>
                     <p class="bg-white p-4 rounded-lg font-normal text-base text-[#000000]/80 mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                 </div>
                 <div class="flex justify-between items-center border-t border-dashed border-[#3752FD]/20 pt-4">
                     <p class="font-medium text-base ">Deadline <br>21 March 2025</p>
-                    <button class="primary-btn">Completed</button>
+                    <button class="primary-btn" id="completeHome">Completed</button>
                 </div>
             </div>
 
             <div class="head-card bg-[#F4F7FF] rounded-xl p-6 ">
                 <div class="flex flex-col gap-4">
                     <p class=" bg-white px-4 py-2 rounded-lg font-normal text-base w-28">Meta</p>
-                    <h3 class="text-2xl font-medium">Add new emoji 🤲 </h3>
+                    <h3 class="text-2xl font-medium" id="emoji-id">Add new emoji 🤲 </h3>
                     <p class="bg-white p-4 rounded-lg font-normal text-base text-[#000000]/80 mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                 </div>
                 <div class="flex justify-between items-center border-t border-dashed border-[#3752FD]/20 pt-4">
                     <p class="font-medium text-base ">Deadline <br>21 March 2025</p>
-                    <button class="primary-btn">Completed</button>
+                    <button class="primary-btn" id="completeEmoji">Completed</button>
                 </div>
             </div>
 
             <div class="head-card bg-[#F4F7FF] rounded-xl p-6 ">
                 <div class="flex flex-col gap-4">
                     <p class=" bg-white px-4 py-2 rounded-lg font-normal text-base w-32">Google LLC</p>
-                    <h3 class="text-2xl font-medium">Integrate OpenAI API  </h3>
+                    <h3 class="text-2xl font-medium" id="api-id">Integrate OpenAI API  </h3>
                     <p class="bg-white p-4 rounded-lg font-normal text-base text-[#000000]/80 mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                 </div>
                 <div class="flex justify-between items-center border-t border-dashed border-[#3752FD]/20 pt-4">
                     <p class="font-medium text-base ">Deadline <br>21 March 2025</p>
-                    <button class="primary-btn">Completed</button>
+                    <button class="primary-btn" id="completeApi">Completed</button>
                 </div>
             </div>
 
             <div class="head-card bg-[#F4F7FF] rounded-xl p-6 ">
                 <div class="flex flex-col gap-4">
                     <p class=" bg-white px-4 py-2 rounded-lg font-normal text-base w-32">Glassdoar</p>
-                    <h3 class="text-2xl font-medium">Improve Job searching  </h3>
+                    <h3 class="text-2xl font-medium" id="job-id">Improve Job searching  </h3>
                     <p class="bg-white p-4 rounded-lg font-normal text-base text-[#000000]/80 mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                 </div>
                 <div class="flex justify-between items-center border-t border-dashed border-[#3752FD]/20 pt-4">
                     <p class="font-medium text-base ">Deadline <br>21 March 2025</p>
-                    <button class="primary-btn">Completed</button>
+                    <button class="primary-btn" id="completeJob">Completed</button>
                 </div>
             </div>
 
@@ -168,10 +168,10 @@
             <h3 class="font-medium text-xl">Activity Log</h3>
         </div>
         <div class="flex items-center justify-center mt-4 pb-4">
-            <button class="primary-btn">Clear History</button>
+            <button class="primary-btn" id="clear">Clear History</button>
         </div>
     </div>
-    <div class="bg-[#F4F7FF] rounded-xl m-6 " id="history">
+    <div  id="history">
         
 
     </div>
@@ -180,8 +180,9 @@
     </main>
     
     <script src="./complete.js"></script>
-    <script src="./addDark.js"></script>
-    <script src="./calculation.js"></script>
+    <!-- <script src="./addDark.js"></script> -->
+     <script src="clear.js"></script>
+    <script src="newPage.js"></script>
     <script src="./theme.js"></script>
 </body>
 </html>
